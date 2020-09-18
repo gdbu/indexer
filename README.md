@@ -40,7 +40,7 @@ func ExampleIndexer_Close() {
 
 ## Performance
 ```
-BenchmarkIndexer_Next-4						187052113		6.43 ns/op
-BenchmarkIndexer_Next_inside_bolt_txn-4		183006438		6.46 ns/op
-BenchmarkDBUtils_Next-4						2148330			485 ns/op
+BenchmarkIndexer_Next-4                    187052113    6.43 ns/op
+BenchmarkIndexer_Next_inside_bolt_txn-4    183006438    6.46 ns/op
+BenchmarkDBUtils_Next-4                    2148330      485 ns/op
 ```
