@@ -68,8 +68,8 @@ func (i *Indexer) Set(value uint64) {
 // Flush will force a flush
 // Note: The OS handles this automatically for MMAP data. This isn't necessary for most use-cases.
 // This can be used to for situations where ACID compliance needs to be 100% guaranteed
-func (i *Indexer) Flush(value uint64) {
-	i.index.Store(value)
+func (i *Indexer) Flush() (err error) {
+	return i.mm.Flush()
 }
 
 // Close will close an Indexer
