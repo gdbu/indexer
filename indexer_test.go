@@ -5,9 +5,6 @@ import (
 	"log"
 	"os"
 	"testing"
-
-	"github.com/boltdb/bolt"
-	"github.com/gdbu/dbutils"
 )
 
 var (
@@ -55,6 +52,9 @@ func BenchmarkIndexer_Next(b *testing.B) {
 	}
 }
 
+/*
+// If you want to benchmark against dbutils and/or with bolt.DB, please uncomment this section.
+// I comment this out so that the go.mod file doesn't include unnecessary imports
 func BenchmarkIndexer_Next_inside_bolt_txn(b *testing.B) {
 	var (
 		indexer *Indexer
@@ -126,6 +126,7 @@ func BenchmarkDBUtils_Next(b *testing.B) {
 		b.Fatal(err)
 	}
 }
+*/
 
 func ExampleNew() {
 	var err error
