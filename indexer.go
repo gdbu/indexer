@@ -6,7 +6,7 @@ import (
 	"unsafe"
 
 	"github.com/edsrzf/mmap-go"
-	"github.com/hatchify/atoms"
+	"github.com/gdbu/atoms"
 	"github.com/hatchify/errors"
 )
 
